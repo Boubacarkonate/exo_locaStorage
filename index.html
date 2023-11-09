@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Storage</title>
 </head>
-<body>
+<body onload="afficher()">
     <h1>Liste de courses</h1>
     <form action="" method="post">
         <p>
@@ -27,8 +27,12 @@
             <input type="button" value="Ajouter" onclick="ajouter()">
             <input type="button" value="Modifier" onclick="modifier()">
             <input type="button" value="Supprimer" onclick="supprimer()">
+            <input type="button" value="Clear" onclick="clear1()">
         </p>
     </form>
+    <table id="display">
+
+    </table>
 
     <script src="./index.js"></script>
 </body>
